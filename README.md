@@ -34,3 +34,13 @@ I Want to check "content-type" and "server" header (route : /v2/hello)
 As a Java 11 HelloServer user
 
 I Want to get personalized greeting message from the server (route : /v3/hello/my-name)
+
+### User Story 6 : 
+As a Java 11 HelloServer user
+
+I Want to define a 3 seconds timeoute for my queries (route : /v4/hello)
+
+### User Story 7 : 
+As a Java 11 HelloServer user
+
+I Want to get server response as a stream of Strings (route : /v5/hello)
