@@ -44,3 +44,9 @@ I Want to define a 3 seconds timeoute for my queries (route : /v4/hello)
 As a Java 11 HelloServer user
 
 I Want to get server response as a stream of Strings (route : /v5/hello)
+
+### User Story 8 : 
+As a Java 11 HelloServer user
+
+I Want to retreive the cookies of a customer (route : /hello/customer/cookie-store)
+
