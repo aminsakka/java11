@@ -14,12 +14,19 @@ This API should replace the historic HttpURLConnection class introduced in JDK 1
 - java 11 or higher
 
 
-### Functional requirements :
-- TODO
-
 
 ### User Story 1 : 
-
+As a Java 11 HelloServer user
+I Want to get greeting message from the server as a String (route : /v1/hello)
 
 ### User Story 2 : 
+As a Java 11 HelloServer user
+I Want to get greeting message from the server as a Json object (route : /v1/hello)
 
+### User Story 4 : 
+As a Java 11 HelloServer user
+I Want to get greeting message from the server as a Json object (route : /v1/hello)
+
+### User Story 5 : 
+As a Java 11 HelloServer user
+I Want to get greeting message from the server as a Json object (route : /v1/hello)
