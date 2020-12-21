@@ -23,7 +23,7 @@ I Want to get greeting message from the server as a String (route : /v1/hello)
 ### User Story 2 : 
 As a Java 11 HelloServer user
 
-I Want to get greeting message from the server as a Json object (route : /v1/hello)
+I Want to get greeting message from the server as a Json object (route : /v2/hello)
 
 ### User Story 4 : 
 As a Java 11 HelloServer user
