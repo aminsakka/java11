@@ -28,24 +28,19 @@ I Want to get greeting message from the server as a Json object (route : /v2/hel
 ### User Story 3 : 
 As a Java 11 HelloServer user
 
-I Want to check "content-type" and "server" header (route : /v2/hello)
-
-### User Story 5 : 
-As a Java 11 HelloServer user
-
 I Want to get personalized greeting message from the server (route : /v3/hello/my-name)
 
-### User Story 6 : 
+### User Story 4 : 
 As a Java 11 HelloServer user
 
 I Want to define a 3 seconds timeoute for my queries (route : /v4/hello)
 
-### User Story 7 : 
+### User Story 5 : 
 As a Java 11 HelloServer user
 
 I Want to get server response as a stream of Strings (route : /v5/hello)
 
-### User Story 8 : 
+### User Story 6 : 
 As a Java 11 HelloServer user
 
 I Want to retreive the cookies of a customer (route : /hello/customer/cookie-store)
