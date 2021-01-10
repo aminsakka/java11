@@ -14,6 +14,7 @@ This API should replace the historic HttpURLConnection class introduced in JDK 1
 - java 11 or higher
 
 
+##  PART I : 
 
 ### User Story 1 : 
 As a Java 11 HelloServer user
@@ -44,4 +45,44 @@ I Want to get server response as a stream of Strings (route : /v5/hello)
 As a Java 11 HelloServer user
 
 I Want to retreive the cookies of a customer (route : /hello/customer/cookie-store)
+
+##  PART II : 
+In this part, we will focus on :
+- redirection
+- BodyHandlers
+- Async request
+
+### User Story 7 : 
+As a Java 11 HelloServer user
+
+I Want to follow redirect 
+AND avoid 302 response (GET - route : /hello-redir) 
+
+### User Story 8 : 
+As a Java 11 HelloServer user
+
+I Want to post the order from Json file (POST - route : /file/orders) 
+
+### User Story 9 : 
+As a Java 11 HelloServer user
+
+I Want to post the order from Input Stream (POST - route : /stream/orders) 
+
+### User Story 10 : 
+As a Java 11 HelloServer user
+
+I Want to implement a blockingSearch (Sync) call of a keyword in a given URI
+
+### User Story 11 : 
+As a Java 11 HelloServer user
+
+I Want to implement a non blockingSearch (Async) call of a keyword in a given URI
+
+### User Story 12 : 
+As a Java 11 HelloServer user
+
+I Want to implement a non blockingSearch (Async) and parallel call of a keyword in a list of URI
+
+
+
 
