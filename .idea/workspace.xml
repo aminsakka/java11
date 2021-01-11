@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8069232e-67e7-4218-8454-f630517bc2a0" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1lni9HJ70WV72IlLdkakhGL8ijh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="kata" />
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.DemoServerShould.should_use_blocking_search">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoAsynchrounousRequest.should_use_non_blocking_search" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java11-training" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DemoAsynchrounousRequest" />
+      <option name="METHOD_NAME" value="should_use_non_blocking_search" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoServerShould.non_blocking_search_Paris_in_URL1_should_return_true" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java11-training" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DemoServerShould" />
+      <option name="METHOD_NAME" value="non_blocking_search_Paris_in_URL1_should_return_true" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoServerShould.should_call_non_blocking_search_in_parallal_stream" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java11-training" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DemoServerShould" />
+      <option name="METHOD_NAME" value="should_call_non_blocking_search_in_parallal_stream" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoServerShould.should_post_request_from_json_file" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java11-training" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DemoServerShould" />
+      <option name="METHOD_NAME" value="should_post_request_from_json_file" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoServerShould.should_use_blocking_search" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java11-training" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DemoServerShould" />
+      <option name="METHOD_NAME" value="should_use_blocking_search" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.DemoServerShould.should_use_blocking_search" />
+        <item itemvalue="JUnit.DemoServerShould.should_call_non_blocking_search_in_parallal_stream" />
+        <item itemvalue="JUnit.DemoServerShould.non_blocking_search_Paris_in_URL1_should_return_true" />
+        <item itemvalue="JUnit.DemoServerShould.should_post_request_from_json_file" />
+        <item itemvalue="JUnit.DemoAsynchrounousRequest.should_use_non_blocking_search" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8069232e-67e7-4218-8454-f630517bc2a0" name="Default Changelist" comment="" />
+      <created>1608239126305</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1608239126305</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="138" y="23" key="#Project_Structure" timestamp="1610360033497">
+      <screen x="0" y="23" width="1280" height="773" />
+    </state>
+    <state x="138" y="23" key="#Project_Structure/0.23.1280.773@0.23.1280.773" timestamp="1610360033497" />
+    <state x="100" y="123" width="1080" height="573" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1608489906266">
+      <screen x="0" y="23" width="1280" height="773" />
+    </state>
+    <state x="100" y="123" width="1080" height="573" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.23.1280.773@0.23.1280.773" timestamp="1608489906266" />
+    <state x="472" y="109" key="#com.intellij.ide.util.MemberChooser" timestamp="1610271027899">
+      <screen x="0" y="23" width="1280" height="773" />
+    </state>
+    <state x="472" y="109" key="#com.intellij.ide.util.MemberChooser/0.23.1280.773@0.23.1280.773" timestamp="1610271027899" />
+    <state width="1238" height="307" key="GridCell.Tab.0.bottom" timestamp="1610359997745">
+      <screen x="0" y="23" width="1280" height="773" />
+    </state>
+    <state width="1238" height="307" key="GridCell.Tab.0.bottom/0.23.1280.773@0.23.1280.773" timestamp="1610359997744" />
+    <state width="1238" height="307" key="GridCell.Tab.0.center" timestamp="1610359997743">
+      <screen x="0" y="23" width="1280" height="773" />
+    </state>
+    <state width="1238" height="307" key="GridCell.Tab.0.center/0.23.1280.773@0.23.1280.773" timestamp="1610359997743" />
+    <state width="1238" height="307" key="GridCell.Tab.0.left" timestamp="1610359997743">
+      <screen x="0" y="23" width="1280" height="773" />
+    </state>
+    <state width="1238" height="307" key="GridCell.Tab.0.left/0.23.1280.773@0.23.1280.773" timestamp="1610359997743" />
+    <state width="1238" height="307" key="GridCell.Tab.0.right" timestamp="1610359997744">
+      <screen x="0" y="23" width="1280" height="773" />
+    </state>
+    <state width="1238" height="307" key="GridCell.Tab.0.right/0.23.1280.773@0.23.1280.773" timestamp="1610359997744" />
+    <state width="1238" height="224" key="GridCell.Tab.1.bottom" timestamp="1610307869662">
+      <screen x="0" y="23" width="1280" height="773" />
+    </state>
+    <state width="1238" height="224" key="GridCell.Tab.1.bottom/0.23.1280.773@0.23.1280.773" timestamp="1610307869662" />
+    <state width="1238" height="224" key="GridCell.Tab.1.center" timestamp="1610307869661">
+      <screen x="0" y="23" width="1280" height="773" />
+    </state>
+    <state width="1238" height="224" key="GridCell.Tab.1.center/0.23.1280.773@0.23.1280.773" timestamp="1610307869661" />
+    <state width="1238" height="224" key="GridCell.Tab.1.left" timestamp="1610307869660">
+      <screen x="0" y="23" width="1280" height="773" />
+    </state>
+    <state width="1238" height="224" key="GridCell.Tab.1.left/0.23.1280.773@0.23.1280.773" timestamp="1610307869660" />
+    <state width="1238" height="224" key="GridCell.Tab.1.right" timestamp="1610307869661">
+      <screen x="0" y="23" width="1280" height="773" />
+    </state>
+    <state width="1238" height="224" key="GridCell.Tab.1.right/0.23.1280.773@0.23.1280.773" timestamp="1610307869661" />
+    <state x="444" y="345" key="ReplaceDuplicatesPrompt" timestamp="1608535043523">
+      <screen x="0" y="23" width="1280" height="773" />
+    </state>
+    <state x="444" y="345" key="ReplaceDuplicatesPrompt/0.23.1280.773@0.23.1280.773" timestamp="1608535043523" />
+    <state x="147" y="23" key="SettingsEditor" timestamp="1608455837472">
+      <screen x="0" y="23" width="1280" height="773" />
+    </state>
+    <state x="147" y="23" key="SettingsEditor/0.23.1280.773@0.23.1280.773" timestamp="1608455837472" />
+    <state x="385" y="165" key="extract.method.dialog" timestamp="1608535011087">
+      <screen x="0" y="23" width="1280" height="773" />
+    </state>
+    <state x="385" y="165" key="extract.method.dialog/0.23.1280.773@0.23.1280.773" timestamp="1608535011087" />
+    <state x="44" y="46" key="new project wizard" timestamp="1608416393443">
+      <screen x="0" y="23" width="1280" height="773" />
+    </state>
+    <state x="44" y="46" key="new project wizard/0.23.1280.773@0.23.1280.773" timestamp="1608416393443" />
+    <state x="305" y="120" key="search.everywhere.popup" timestamp="1608489230308">
+      <screen x="0" y="23" width="1280" height="773" />
+    </state>
+    <state x="305" y="120" key="search.everywhere.popup/0.23.1280.773@0.23.1280.773" timestamp="1608489230308" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/DemoServerTest.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/DemoServerTest.java</url>
+          <line>67</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/DemoServerShould.java</url>
+          <line>82</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/DemoServerShould.java</url>
+          <line>84</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/bfb_training$DemoServer.ic" NAME="DemoServer Coverage Results" MODIFIED="1608481987774" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>
