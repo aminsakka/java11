@@ -1,5 +1,6 @@
 import io.javalin.Javalin;
 import java.util.Arrays;
+
 public class DemoServer {
 
 
@@ -30,20 +31,32 @@ public class DemoServer {
             ctx.result("Streaming lines \n from server. \n Hello\n http client.");
         });
 
-        //Async
-        app.get("v6/hello", ctx -> {
-            ctx.wait(3000);
-            ctx.json("Streaming lines \n from server. \n Hello\n http client.");
-        });
-
 
         app.get("hello/cookie-store", ctx -> {
 
             ctx.cookieStore("string-cookie", "Hello cookie !" );
             ctx.cookieStore("visit", 3);
             ctx.cookieStore("list", Arrays.asList("One", "Two", "Three"));
-
         });
 
+
+
+        //redirect
+        app.get("hello-redir", ctx -> {
+            ctx.redirect("redirected", 302);
+        });
+
+        //redirection
+        app.get("redirected", ctx -> {
+            ctx.result("You are redirected to the new web site.");
+        });
+
+        //Handler of file
+        app.post("orders", ctx -> {
+            Order r = ctx.bodyAsClass(Order.class);
+            System.out.println("Received order : " +  r.toString());
+            ctx.json(r);
+            ctx.status(201);
+        });
     }
 }

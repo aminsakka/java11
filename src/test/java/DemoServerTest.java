@@ -1,14 +1,23 @@
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.assertj.core.api.Assert;
 import org.junit.jupiter.api.Test;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.URI;
+import java.net.URISyntaxException;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.time.Duration;
+import java.util.HashMap;
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.TimeoutException;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -16,9 +25,16 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class DemoServerTest {
 
-    private static final String BASE = "http://localhost:7001" ;
+    private static final String BASE = "http://localhost:7001";
 
-    final HttpClient client = HttpClient.newHttpClient();
+    final HttpClient client = HttpClient
+           // .version(HttpClient.Version.HTTP_1_1)
+
+            .newBuilder()
+            .followRedirects(HttpClient.Redirect.NORMAL)
+            .build();
+            //newHttpClient()
+
 
     @Test
     public void should_send_sync_request() throws IOException, InterruptedException {
@@ -45,7 +61,7 @@ public class DemoServerTest {
         final HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
 
         //THEN
-        final String expectedContentType = "application/json" ;
+        final String expectedContentType = "application/json";
         assertThat(response.headers().allValues("content-type").contains(expectedContentType));
 
         final String expectedServer = "Javalin";
@@ -92,7 +108,7 @@ public class DemoServerTest {
         HttpRequest requestBodyOfFile = HttpRequest.newBuilder()
                 .header("Content-Type", "application/json")
                 .POST(HttpRequest.BodyPublishers.ofFile(Path.of("user.json")))
-                .uri(URI.create( BASE + "/v8/hello"))
+                .uri(URI.create(BASE + "/v8/hello"))
                 .build();
     }
 
@@ -109,24 +125,82 @@ public class DemoServerTest {
     }
 
     @Test
-    public void should_send_async_request(){
+    public void should_send_async_request() throws InterruptedException, ExecutionException, TimeoutException {
 
         HttpRequest
                 request = HttpRequest.newBuilder()
                 .version(HttpClient.Version.HTTP_2)
-                .uri(URI.create("http://localhost:7001/v6/hello"))
+                .timeout(Duration.ofSeconds(10))
+                .uri(URI.create("http://localhost:7001/hello-post"))
                 .build();
 
-        client.sendAsync(request, HttpResponse.BodyHandlers.ofString())
-                .thenApply(HttpResponse::body)
-                .thenAccept(System.out::println)
-                .join();
+        CompletableFuture<HttpResponse<String>> response = client.sendAsync(request, HttpResponse.BodyHandlers.ofString());
+            //    .thenApply(HttpResponse::body)
+            //    .thenAccept(System.out::println)
+            //    .join();
+        String result = response.thenApply(HttpResponse::body).get(5, TimeUnit.SECONDS);
+
     }
+
+
+    @Test
+   public void should_send_file() throws URISyntaxException, IOException, InterruptedException {
+      HttpRequest request = HttpRequest.newBuilder()
+                .uri(new URI("http://localhost:7001/post-file"))
+                .headers("Content-Type", "text/plain;charset=UTF-8")
+                .POST(HttpRequest.BodyPublishers.ofFile(
+                        Paths.get("src/test/resources/tuto.pdf")))
+                .build();
+
+
+      client.send(request, HttpResponse.BodyHandlers.ofString());
+    }
+
+
+    @Test
+    public void should_follow_redirect() throws IOException, InterruptedException {
+
+        HttpRequest request = buildHttpRequest("/hello-redir");
+
+        HttpResponse<String> response = client
+
+                .send(request, HttpResponse.BodyHandlers.ofString());
+
+        int expectedCode = 302;
+        //assertThat(response.statusCode()).isEqualTo(expectedCode);
+
+        final String expectedBody = "Welcome to our new Web site";
+        assertThat(response.body()).isEqualTo(expectedBody);
+    }
+
+    @Test
+    public void should_post_request() throws IOException, InterruptedException {
+        var values = new HashMap<String, String>() {{
+            put("name", "John Doe");
+            put ("occupation", "gardener");
+        }};
+
+        var objectMapper = new ObjectMapper();
+        String requestBody = objectMapper
+                .writeValueAsString(values);
+
+
+        HttpClient client = HttpClient.newHttpClient();
+        HttpRequest request = HttpRequest.newBuilder()
+                .uri(URI.create("http://localhost:7001/hello-post"))
+                .POST(HttpRequest.BodyPublishers.ofString(requestBody))
+                .build();
+
+        client.send(request, HttpResponse.BodyHandlers.ofString());
+    }
+
+
 
     private  HttpRequest buildHttpRequest(String route) {
         return HttpRequest.newBuilder()
                 .version(HttpClient.Version.HTTP_2)
                 .uri(URI.create(BASE + route))
+
                 .build();
     }
 }
