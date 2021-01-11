@@ -43,6 +43,9 @@ public class DemoServerShould {
             map(URI::create).
             collect(Collectors.toList());
 
+    /*TODO
+    Follow redirect
+     */
     @Test
     public void should_follow_redirect() throws IOException, InterruptedException {
         final HttpClient client = HttpClient
@@ -61,13 +64,11 @@ public class DemoServerShould {
         assertThat(response.body()).isEqualTo(expectedBody);
     }
 
-    /* From Input Stream
 
+    /*TODO
+    POST JSON FROM FILE
+    Use BodyPublishers to Post the request
      */
-
-
-    //POST JSON FROM FILE
-    //Use BodyPublishers to Post the request
     @Test
     public void should_post_request_from_json_file() throws IOException, InterruptedException {
         final HttpClient client = HttpClient
@@ -130,8 +131,10 @@ public class DemoServerShould {
 
         Instant now1 = Instant.now();
 
-        //Do some stuff here to stream on all the URIs and get the array initialized.
-        //call asynchronousSearch
+        /*TODO : implement me
+        Do some stuff here to stream on all the URIs and get the array initialized.
+        call asynchronousSearch
+        */
         CompletableFuture[] futures = null;
 
         Instant now2 = Instant.now();
@@ -140,8 +143,9 @@ public class DemoServerShould {
         System.out.println(" Duration 1 (send asyn request) : " + duration1 + " seconds.");
         assertThat(duration1).isZero();
 
-        //Do some stuff here to ensure that all the async tasks are finished
-
+        /*TODO : implement me
+        Do some stuff here to ensure that all the async tasks are finished
+        */
 
         Instant now3 = Instant.now();
         long duration2 =  Duration.between(now1, now3).getSeconds();
@@ -151,6 +155,8 @@ public class DemoServerShould {
     }
 
 
+    /*TODO : implement me
+     */
     private CompletableFuture<String> asynchronousSearch(HttpClient client, URI uri, String search) {
 
         CompletableFuture<String> futureResult = new CompletableFuture<String>();
@@ -158,7 +164,8 @@ public class DemoServerShould {
         return futureResult;
     }
 
-
+    /*TODO : implement me
+     */
     private boolean blockingSearch(HttpClient client, URI uri, String search) {
         return false ;
     }
