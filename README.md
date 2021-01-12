@@ -61,24 +61,20 @@ AND avoid 302 response (GET - route : /hello-redir)
 ### User Story 8 : 
 As a Java 11 HelloServer user
 
-I Want to post the order from Json file (POST - route : /file/orders) 
+I Want to post the order from Json file (POST - route : /orders).
+The file to post is "src/test/resources/test.json"
 
 ### User Story 9 : 
 As a Java 11 HelloServer user
 
-I Want to post the order from Input Stream (POST - route : /stream/orders) 
+I Want to implement a blockingSearch (Sync) call of a keyword in a given URI
 
 ### User Story 10 : 
 As a Java 11 HelloServer user
 
-I Want to implement a blockingSearch (Sync) call of a keyword in a given URI
-
-### User Story 11 : 
-As a Java 11 HelloServer user
-
 I Want to implement a non blockingSearch (Async) call of a keyword in a given URI
 
-### User Story 12 : 
+### User Story 11 : 
 As a Java 11 HelloServer user
 
 I Want to implement a non blockingSearch (Async) and parallel call of a keyword in a list of URI
